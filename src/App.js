@@ -35,9 +35,9 @@ export default function App() {
         <ul style={{ paddingInlineStart: "0" }}>
           {musicdict[selectedGenre].map((music) => (
             <li key={music.name} className="list">
-              {music.name}
-              {music.rating}
-              {music.singer}
+              <p>{music.name}</p>
+              <p>{music.rating}</p>
+              <p>{music.singer}</p>
             </li>
           ))}
         </ul>
