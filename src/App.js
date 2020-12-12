@@ -3,7 +3,7 @@ import "./styles.css";
 import { musicDB } from "./MusicDB";
 
 // for accessing the keys
-var musicdict = Object.keys(musicDB);
+const musicdict = Object.keys(musicDB);
 
 export default function App() {
   // initial state load is at English
@@ -30,14 +30,16 @@ export default function App() {
         ))}
       </div>
 
+      <hr />
+
       {/* return the list */}
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
-          {musicdict[selectedGenre].map((music) => (
+          {musicDB[selectedGenre].map((music) => (
             <li key={music.name} className="list">
-              <p>{music.name}</p>
-              <p>{music.rating}</p>
-              <p>{music.singer}</p>
+              <div style={{ fontSize: "large" }}>{music.name}</div>
+              <div style={{ fontSize: "small" }}>{music.singer}</div>
+              <div style={{ fontSize: "small" }}>{music.rating}</div>
             </li>
           ))}
         </ul>

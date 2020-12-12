@@ -1,14 +1,41 @@
 .App {
+  max-width: 700px;
+  padding: 2rem;
+  margin: auto;
+}
+
+body,
+html {
   font-family: sans-serif;
   text-align: center;
+  background-image: linear-gradient(to bottom right, #1f0038, #1b1e69);
+}
+
+h1 {
+  color: #f90401;
 }
 
 .genreButton {
   cursor: pointer;
-  background: #e5e7eb;
+  background: #adb5bd;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   margin: 1rem 0.3rem;
+}
+
+.genreButton:hover {
+  transform: scale(0.98);
+}
+
+.list {
+  list-style: none;
+  padding: 1rem;
+  background: #adb5bd;
+  border: 1px solid #d1d5db;
+  border-radius: 2rem;
+  width: 70%;
+  margin: 1rem 0rem;
+  borderradius: 0.5rem;
 }
