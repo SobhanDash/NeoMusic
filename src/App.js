@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>🎧Feel the Music!</h1>
+      <h1>🎧Feel the Music!🎧</h1>
       <div>
         {/* renders the buttons at first render */}
         {musicdict.map((genre) => (

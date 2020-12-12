@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nerko+One&display=swap');
+
 .App {
   max-width: 700px;
   padding: 2rem;
@@ -6,23 +8,30 @@
 
 body,
 html {
-  font-family: sans-serif;
+  font-family: 'Kalam', cursive;
   text-align: center;
   background-image: linear-gradient(to bottom right, #1f0038, #1b1e69);
+  color: #2feaa8;
 }
 
 h1 {
-  color: #f90401;
+  color: #2feaa8;
+  background: -webkit-linear-gradient(#2feaa8, #028cf3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Nerko One', cursive;
 }
 
 .genreButton {
   cursor: pointer;
-  background: #adb5bd;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   margin: 1rem 0.3rem;
+  background-image: linear-gradient(to bottom right, #471069, #028cf3);
+  color: #2feaa8;
+  font-family: 'Kalam', cursive;
 }
 
 .genreButton:hover {
@@ -32,10 +41,10 @@ h1 {
 .list {
   list-style: none;
   padding: 1rem;
-  background: #adb5bd;
-  border: 1px solid #d1d5db;
+  border: 1px solid #f44369;
   border-radius: 2rem;
   width: 70%;
   margin: 1rem 0rem;
   borderradius: 0.5rem;
+  background-image: linear-gradient(to bottom right, #471069, #2472fc);
 }
